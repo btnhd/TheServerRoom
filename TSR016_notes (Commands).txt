@@ -1,0 +1,71 @@
+Azure commands:
+sudo apt-get update
+
+sudo apt-get install apache2
+
+sudo apt-get install mysql-server
+
+sudo apt-get install php5 libapache2-mod-php5
+
+sudo /etc/init.d/apache2 restart
+
+check localhost
+
+php -r 'echo "\n\nYour PHP installation is working fine.\n\n\n";'
+
+------------------------------------------------------------------------
+
+cd /etc/network
+
+sudo vi interfaces (i - insert)
+
+iface enp0s3 inet static
+	address xxx.xxx.xx.xx
+	netmask 255.255.xxx.xxx
+	gateway xxx.168.xx.xxx
+	
+(ESC) :wq (ENTER)
+
+(stop/restart)
+sudo ifconfig enp0s3 down
+sudo ifconfig enp0s3 up 
+
+ifconfig
+
+cd /etc
+
+ls
+
+sudo vi resolv.conf
+
+nameserver 192.168.xxx.xxx
+nameserver 192.168.xxx.xxx
+
+date
+
+sudo date -s 0325
+
+date --help
+
+LAMP (Linux, Apache, MySQL, PHP)
+
+sudo mysql_secure_installation
+
+sudo update-rc.d apache2 defaults
+
+cd /etc
+
+sudo find / -name apache2.conf
+
+cd /etc/apache2
+
+ls
+cat apache2.conf | less
+
+cd /var/www
+
+ls
+
+cd html
+
+ls
