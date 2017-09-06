@@ -1,0 +1,11 @@
+chrome
+
+"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" -incognito
+
+Firefox
+
+Menu > Options > Privacy > History: "Never remember history"
+
+Internet Explorer
+
+"C:\Program Files\Internet Explorer\iexplore.exe" -private
