@@ -1,0 +1,39 @@
+check drive status (on live server):
+
+> lsblk
+
+> fdisk -l 
+
+> cfdisk /dev/sda (name of the drive found in fdisk -l command)
+
+> follow prompts within cfdisk (gpt format)
+
+> get name of created partition (/dev/sda1)
+
+> pvcreate /dev/sda1
+
+> vgcreate data-storage /dev/sdb1 (create a volume group)
+
+within Proxmox webGUI
+
+> Add > LVM
+
+> ID = data-storage
+> Base Storage = "Existing volume group"
+> Volume-Group = "Pick your new HD"
+
+Adding directory (Windows share)
+
+> mkdir /mnt/pc-btnhd
+
+> cd /etc
+
+> nano fstab || //192.168.1.111/ISOs/ /mnt/pc-btnhd/ cifs 0 0 
+
+> mount -t cifs //192.168.1.111/ISOs /mnt/pc-btnhd -o vers=2.0,username=btnhd
+
+Add directory (Proxmox webGUI)
+
+> ID = ISOs
+> Directory = /mnt/pc-btnhd
+
