@@ -1,0 +1,106 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings]
+"Position"="Middle"
+"Icon"="SystemSettingsBroker.exe"
+"SubCommands"=""
+
+; Settings home
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\01subcmd]
+"Icon"="SystemSettingsBroker.exe"
+"MUIVerb"="Settings"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\01subcmd\command]
+@="explorer ms-settings:"
+
+; System
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\02subcmd]
+"CommandFlags"=dword:00000020
+"MUIVerb"="System"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\02subcmd\command]
+@="explorer ms-settings:display"
+
+; Devices
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\03subcmd]
+"MUIVerb"="Devices"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\03subcmd\command]
+@="explorer ms-settings:bluetooth"
+
+; Network & Internet
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\04subcmd]
+"MUIVerb"="Network && Internet"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\04subcmd\command]
+@="explorer ms-settings:network"
+
+; Personalization
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\05subcmd]
+"MUIVerb"="Personalization"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\05subcmd\command]
+@="explorer ms-settings:personalization"
+
+; Apps
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\06subcmd]
+"MUIVerb"="Apps"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\06subcmd\command]
+@="explorer ms-settings:appsfeatures"
+
+; Accounts
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\07subcmd]
+"MUIVerb"="Accounts"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\07subcmd\command]
+@="explorer ms-settings:yourinfo"
+
+; Time & language
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\08subcmd]
+"MUIVerb"="Time && language"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\08subcmd\command]
+@="explorer ms-settings:dateandtime"
+
+; Gaming
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\09subcmd]
+"MUIVerb"="Gaming"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\09subcmd\command]
+@="explorer ms-settings:gaming-gamebar"
+
+; Ease of Access
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\10subcmd]
+"MUIVerb"="Ease of Access"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\10subcmd\command]
+@="explorer ms-settings:easeofaccess-narrator"
+
+; Cortana
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\11subcmd]
+"MUIVerb"="Cortana"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\11subcmd\command]
+@="explorer ms-settings:cortana"
+
+; Privacy
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\12subcmd]
+"MUIVerb"="Privacy"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\12subcmd\command]
+@="explorer ms-settings:privacy"
+
+; Update & security
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\13subcmd]
+"MUIVerb"="Update && security"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\13subcmd\command]
+@="explorer ms-settings:windowsupdate"
+
+; Mixed Reality
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\14subcmd]
+"MUIVerb"="Mixed Reality"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\DesktopBackground\Shell\Settings\shell\14subcmd\command]
+@="explorer ms-settings:holographic"
