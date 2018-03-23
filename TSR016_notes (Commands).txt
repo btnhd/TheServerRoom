@@ -1,3 +1,4 @@
+#Bernardo Arocho (BTNHD)
 Azure commands:
 sudo apt-get update
 
